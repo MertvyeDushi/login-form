@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		
+		link(rel="stylesheet" href="css/style.css")
+		
+		title Login Form
+
+	body
+
+
+		main
+		
+			section.login(class="inner-page u-df-center")
+
+				form.login__form(id="loginForm" class="form u-df-column")
+
+					.login__fields-container
+						
+						.login__fields-row(class="u-df-column")
+							label.login__label(for="username" class="label") Username
+							input.login__input(id="username" class="input" type="text" required)
+						
+						.login__fields-row(class="u-df-column")
+							label.login__label(for="password" class="label") Password
+							input.login__input(id="password" class="input" type="password" required)
+						
+
+					button.login__button(id="submitButton" class="button" type="submit") Login
+
+
+		script(src="js/sender.js")
